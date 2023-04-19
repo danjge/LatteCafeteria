@@ -444,9 +444,6 @@ header {
  
 /*INDEX RESPONSIVE*/
 @media (max-width: 600px) {
-   body {
-   
-   }
    .navbar-desk {
      display: none;
    }
@@ -460,9 +457,6 @@ header {
       display: none;
    }
  }
-
-
-
 
  @media (min-width: 600px) {
    .navbar {
