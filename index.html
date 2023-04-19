@@ -19,7 +19,7 @@
     <header>
       <div class="header-container">
         <a href="#" class="logo"><img src="img/lattelogo.png" class="logo" alt="Logo de la empresa" /></a>
-        <nav class="navbar">
+        <nav class="navbar-desk">
           <div class=menu-left>
             <ul>
               <li><a href="index.html">INICIO</a></li>
@@ -28,8 +28,9 @@
               <li><a href="pages/nosotros.html">NOSOTROS</a></li>
             </ul>
           </div>
+        </nav>
+        <div class="navbar bg-body-tertiary fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,8 +64,35 @@
               </div>
             </div>
           </div>
-        </nav>
-        <div>
+        </div>
+        <!-- <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pages/novedades.html">NOVEDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pages/productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pages/encontranos.html">ENCONTRANOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav> -->
         <form class="search">
           <input type="text" name="search" placeholder="Buscar...">
         </form>
@@ -122,31 +150,7 @@
                 </div>
                 <div class="card">
                   <div class="image-wrapper">
-                    <img src="img/brasil.png"alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">BRASIL</h5>
-                    <p class="card-text">$10.000</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="image-wrapper">
-                    <img src="img/brasil.png"alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">BRASIL</h5>
-                    <p class="card-text">$10.000</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <div class="image-wrapper">
-                    <img src="img/colombia.png" alt="...">
+                    <img src="img/colombia.png"alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">COLOMBIA</h5>
@@ -154,13 +158,9 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
                 <div class="card">
                   <div class="image-wrapper">
-                    <img src="img/etiopiaa.png" alt="...">
+                    <img src="img/etiopiaa.png"alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">ETIOPIA</h5>
@@ -168,13 +168,9 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
                 <div class="card">
                   <div class="image-wrapper">
-                    <img src="img/costa rica.png" alt="...">
+                    <img src="img/costarica.png"alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">COSTA RICA</h5>
@@ -182,13 +178,9 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
                 <div class="card">
                   <div class="image-wrapper">
-                    <img src="img/nicaragua.png" alt="...">
+                    <img src="img/nicaragua.png"alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">NICARAGUA</h5>
@@ -197,8 +189,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>  
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -207,6 +198,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+          </div>
         </div>
       </section>
 
