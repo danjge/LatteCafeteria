@@ -22,77 +22,84 @@ body {
 
  /*HEADER*/
 header {
-   display: flex;
-   width: 100%;
-   height: 100px;
-   justify-content: space-between;
+   display: grid;
+   width: 100vw;
+   height: 100px;  
    align-items: center;
+   text-align: center;
    padding: 1rem;
    background-color: var(--bg);
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .header-container {
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-row: 1;
+   justify-content: stretch;
+   text-align: center;
    align-items: center;
-   position: relative;
-   margin: 20px 0px 5px 5px;
    font-size: 1rem;
    width: 100%;
 }
 .logo{
+   grid-column: 2 / 2;
+   grid-row: inherit;
+   justify-self: center;
+   align-items: center;
+}
+.logo img{
+   align-items: center;
+   justify-content: center;
    width: 80px;
    height: auto;
-   position: relative;
-   left: 50%;
 }
+
 .navbar-desk{
-   display: flex;
-   justify-content: space-between;
+   grid-column: 1 / 2;
+   grid-row: inherit;
+   justify-self: center;
+   justify-content: center;
    align-items: center;
-   position: relative;
-   width: 100%;  
+   margin-left: 0;
 }
-.navbar-desk ul li{
-   display: inline-flex;
-   padding: 0px 50px 0px 0px;  
-}
-.navbar-desk ul li a{
+
+.menu-left ul{
    display: flex;
    list-style: none;
+   justify-content: space-between;
+   list-style-type: none;
+
+}
+.menu-left ul li{
+   padding: 0px 50px 0px 0px;
+}
+.menu-left ul li a{
+   text-decoration: none; 
    color: white;
-   top: 50px;
-   border: var(--border);
-   padding: 10px;
 }
 .menu-right{
    display: flex;
-   text-align: right;
-   margin-right: 0;
+   grid-column: 3 / 3;
+   grid-row: inherit;
+   justify-self: end;
 }
 .menu-right ul{
    list-style: none;
-   margin-right: auto;
-   text-decoration: none; 
-   text-align: right;
-   position:relative;
+   justify-content: center;
+   text-align: center;
 }
 .menu-right ul li a{
-   text-align: right;
-   margin-right: 0;
-   list-style: none;
+   display: flex;
    color: white;
-   border: var(--border);
-   padding: 10px;
+   text-decoration: none; 
 }
 .iconos {
-   display: flex;
-   justify-content: flex-end;
+   display: inline-flex;
+   grid-column: 3 / 3;
    align-items: center;
  }
  .iconos a {
-   display: flex;
-   margin-left: 30px;
+   padding-left: 30px;
  }
  .iconos img {
    width: 35px;
@@ -101,20 +108,41 @@ header {
    filter: invert(100%);
  }
 .search {
-   display: flex;
-   align-items: center;
-   padding: 16px;
+   display: inline-flex;
+   grid-column: 3 / 3;
  }
+ 
  input{
    border: none;
    border-radius: 20px;
    background-color: #f4f4f4;
    padding: 0.5rem 1rem;
-   margin-right: 5rem;
    font-size: 1rem;
    color: var(--black);
  }
- 
+ .menu-hamborgueja {
+   position: relative;
+ }
+ .collapse {
+   position: absolute;
+   top: 140%;
+   left: 0;
+   width: 100%;
+ }
+.navbar-toggler {
+   z-index: 999999;
+}
+.container.fluid{
+   grid-column: 1 / 1;
+   grid-row: inherit;
+}
+.navbar-toggler{
+   width: 60px;
+}
+.navbar-toggler-icon{
+   width: 100%;
+}
+
  /*MAIN*/
 .container{
    background-image: url("../img/mainlatteabag.png"); 
@@ -122,9 +150,7 @@ header {
    background-size: cover;
    background-position: center;
    height: 500px;
-   width: 80%;
-   position: relative;
-   margin-left: 10%;
+   width: 100vw;
    padding-top: 150px;
 }
 .container img{
@@ -447,31 +473,21 @@ header {
    .navbar-desk {
      display: none;
    }
-   .menu-right {
-      display: none;
-    }
-   .search {
+   .search{
       display: none;
    }
-   .iconos {
+   .menu-right ul{
       display: none;
+   }
+   .shop{
+      display: none;
+      grid-template-columns: 4 / 4;
+      justify-self: end;
    }
  }
 
  @media (min-width: 600px) {
-   .navbar {
+   .menu-hamborgueja {
       display: none;
-      width: 200px;
-      color: #000000;
-      background-color: #000000;
-   }
-   .navbar-toggler {
-      width: 200px;
-      color: #000000;
-      border: none;
-   }
-   .container-fluid {
-      display: none;
-      width: 300px;
    }
  }
