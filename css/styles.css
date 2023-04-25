@@ -151,10 +151,8 @@ ul{
  /*MAIN*/
 .main-container{
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   row-gap: 5rem;
-   grid-template-rows: 40rem 50rem 50rem 50rem;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 3rem;
 }
 .container-titulo {
    display: grid;
@@ -162,11 +160,11 @@ ul{
    background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
    background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */
    background-repeat: no-repeat;
-   background-size: 100% 100%;
+   background-size: cover;
    background-position: center;
    justify-self: center;
-   height: 100%;
-   width: 80%;
+   height: 50rem;
+   width: 100%;
    padding-top: 10rem;
    grid-column: span 2;
 }
@@ -200,7 +198,7 @@ a{
 .seccion-a {
    padding: 2rem;
    width: 100%;
-   grid-column: span 2;
+   grid-column: 1 / span 2;
  }
 .seccion-a h2 {
    font-size: 2rem;
@@ -249,7 +247,8 @@ a{
    width: 80%;
    height: 500px;
    margin-left: 10%;
-   grid-column: span 2;
+   grid-column: 1 / span 2;
+   grid-row: 3 / 3;
    justify-self: center;
  }
  .seccion-b h2 {
@@ -262,20 +261,20 @@ a{
  }
 
  .seccion-c {
-   grid-column: span 2;
-   justify-self: center;
-}
-
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
  .seccion-c img{
    display: flex;
    justify-self: center;
    border-radius: 20%;
  }
  .img-1{
+   justify-self: center;
    width: 600px;
    height: 600px;
+   grid-column: 1;
    grid-row: 4 / 4;
-   grid-column: 1 / 2;
    margin-right: 5rem;
  }
  .img-1 img{
@@ -283,10 +282,9 @@ a{
    height: 600px;
  }
  .img-2{
-   display: flex;
-   display: grid;
    grid-row: 4 / 4;
-   grid-column: 2 / 2;
+   grid-column: 2;
+   justify-self: center;
    width: 600px;
    height: 600px;
  }
