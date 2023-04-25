@@ -149,26 +149,32 @@ ul{
 }
 
  /*MAIN*/
-.container{
-   background-image: url("../img/mainlatteabag.png"); 
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   width: 100vw;
-   padding-top: 150px;
+.main-container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   row-gap: 5rem;
+   grid-template-rows: 40rem 50rem 50rem 50rem;
 }
-.container img{
-   width: 100%;
+.container-titulo {
+   display: grid;
+   background-image: url("../img/mainlatteabag.png"); 
+   background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
+   background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+   justify-self: center;
    height: 100%;
+   width: 80%;
+   padding-top: 10rem;
+   grid-column: span 2;
 }
 
  h1{
-   font-size: 4rem;
    margin-left: 5%;
    font-weight: bold;
    color: var(--main-color);
-   padding-bottom: 100px;
  }
  h3 text{
    font-size: 1rem;
@@ -186,74 +192,65 @@ ul{
    margin-left: 5%;
    text-align: center;
 }
-
 a{
    text-decoration: none;
 }
 
-/* SECCION 1 */
+/* SECCIONES */
 .seccion-a {
    padding: 2rem;
-   width: 80%;
-   height: 700px;
-   margin-left: 10%;
-   background-color: #d3ad7f;
+   width: 100%;
+   grid-column: span 2;
  }
 .seccion-a h2 {
    font-size: 2rem;
    font-weight: bold;
    text-align: left;
-   margin-left: 5%;
+   margin-left: 10%;
    padding-bottom: 20px;
  }
 .seccion-a h3  {
    width: 10rem;
    font-size: 1.5rem;
    text-align: center;
-   margin-left: 5%;
+   margin-left: 10%;
    border: var(--border);
    padding: 10px; 
    border-radius: 10px;
  }
-
- #carouselExample {
-   width: 100%;
- }
-
-.cards-wrapper{
+ .carousel-item.active{
    display: flex;
-   width: 100%;
+   padding: 2rem;
+   align-items: center;
+}
+.carousel-item{
    justify-content: center;
-   text-align: center;
+   align-items: center;
 }
-.card{
-   margin: 0 .20em;
-   width: 30%;
-   height: 500px;
+.carousel-item img{
+   border-radius: 20%;
+   justify-self: center;
+   justify-content: center;
+   align-items: center;
 }
-.image-wrapper{
-   height: 20vw;
-}
-.image-wrapper img{
-   max-width: 100%;
-   max-height: 130%;
-}
-.card-text{
-   color: #000000;
-}
-
- /*SECCION 2 */
+.navbar-toggler-icon {
+   border-color: var(--main-color); /* Color del borde */
+   border: var(--main-color);
+ }
+ 
  .seccion-b {
+   display: flex;
    background-image: url("../img/section1.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position-y: 90% ;
    display: flex;
-   flex-direction: column;
    padding: 2rem;
    width: 80%;
    height: 500px;
    margin-left: 10%;
+   grid-column: span 2;
+   justify-self: center;
  }
  .seccion-b h2 {
    font-size: 2rem;
@@ -263,20 +260,41 @@ a{
    padding-bottom: 20px;
    color: var(--main-color);
  }
- /*SECCION 3 */
+
  .seccion-c {
-   display: flex;
-   padding: 5rem;
-   width: 80%;
-   height: 700px;
-   margin-left: 10%;
- }
+   grid-column: span 2;
+   justify-self: center;
+}
+
  .seccion-c img{
-   padding: 20px;
-   width: 50%;
-   height: auto; 
-   justify-content: space-between;
-   margin-left: 5px;
+   display: flex;
+   justify-self: center;
+   border-radius: 20%;
+ }
+ .img-1{
+   width: 600px;
+   height: 600px;
+   grid-row: 4 / 4;
+   grid-column: 1 / 2;
+   margin-right: 5rem;
+ }
+ .img-1 img{
+   width: 100%;
+   height: 600px;
+ }
+ .img-2{
+   display: flex;
+   display: grid;
+   grid-row: 4 / 4;
+   grid-column: 2 / 2;
+   width: 600px;
+   height: 600px;
+ }
+ .img-2 img{
+   width: 100%;
+   height: 600px;
+   grid-row: 4 / 4;
+   grid-column: 2 / 2;
  }
 
 /*FOOTER*/
@@ -443,7 +461,6 @@ a{
    width: 100%;
    height: 1000px;
    background-repeat: no-repeat;
-   background-color: #d3ad7f;
    background-size: cover;
 }
 .collage img{
@@ -463,11 +480,14 @@ a{
 }
 
 .container-novedades{
-   background-image: url("../img/backgroundnovedades.jpg"); 
+   display: flex;
+   background-image: url("../img/backgroundnovedades.jpg");
+   background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
+   background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */ 
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   grid-column: 2 / 2;
+   grid-column: span 2;
 }
 
 .container-novedades h1{
@@ -581,6 +601,8 @@ a{
 /*PAGINA NOSOTROS*/
 .container-nosotros{
    background-image: url("../img/equipo.jpg");
+   background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
+   background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */
    width: 100%;
    height: 1000px;
    background-repeat: no-repeat;
@@ -644,7 +666,31 @@ a{
    .menu-right ul{
       display: none;
    }
+   /*INDEX*/
+   .main-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
    
+   .seccion-c{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .img-1 img{
+      max-width: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+   }
+   .img-2 img{
+      max-width: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+       
+   }
+
    /*Pagina novedades*/
    .container-novedades{
       display: flex;
@@ -725,7 +771,6 @@ a{
       max-width: 100%;
       width: auto;
    }
-  
 
    /*footer*/
    .footer{
@@ -775,7 +820,6 @@ a{
       border-right: none;
    }
 
-
  }
 
  @media (min-width: 600px) {
@@ -785,11 +829,5 @@ a{
    .menu-hamborgueja {
       display: none;
       text-align: center;
-   }
-  
-   /*Pagina novedades*/
-   .container-novedades {
-      display: flex;
-      grid-template-columns: repeat(1, 1fr);
    }
  }
