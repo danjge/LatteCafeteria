@@ -149,9 +149,10 @@ ul{
 }
 
  /*MAIN*/
-.main-container{
+.contenedor-principal{
    display: grid;
    grid-template-columns: 1fr 1fr;
+   grid-template-rows: (4, 1fr);
    row-gap: 3rem;
 }
 .container-titulo {
@@ -163,10 +164,11 @@ ul{
    background-size: cover;
    background-position: center;
    justify-self: center;
-   height: 50rem;
+   height: 30rem;
    width: 100%;
    padding-top: 10rem;
    grid-column: span 2;
+   grid-row: 1;
 }
 
  h1{
@@ -199,6 +201,7 @@ a{
    padding: 2rem;
    width: 100%;
    grid-column: 1 / span 2;
+   grid-row: 2;
  }
 .seccion-a h2 {
    font-size: 2rem;
@@ -248,7 +251,7 @@ a{
    height: 500px;
    margin-left: 10%;
    grid-column: 1 / span 2;
-   grid-row: 3 / 3;
+   grid-row: 3;
    justify-self: center;
  }
  .seccion-b h2 {
@@ -258,11 +261,13 @@ a{
    margin-left: 5%;
    padding-bottom: 20px;
    color: var(--main-color);
+   
  }
 
  .seccion-c {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   grid-row: 4;
  }
  .seccion-c img{
    display: flex;
@@ -457,7 +462,7 @@ a{
 .container-nosotros{
    background-image: url("../img/equipo.jpg");
    width: 100%;
-   height: 1000px;
+   height: 100px;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -665,7 +670,7 @@ a{
       display: none;
    }
    /*INDEX*/
-   .main-container{
+   .contenedor-principal{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
    }
