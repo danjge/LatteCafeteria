@@ -1,0 +1,77 @@
+/*PAGINA NOSOTROS*/
+.container-nosotros{
+    display: flex;
+    background-image: url("../img/equipo.jpg");
+    background-color: rgba(0, 0, 0, 0.2); /* El último valor es la opacidad */
+    background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */
+    background-position: center;
+    width: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    object-fit: cover;
+ }
+ 
+ .container-nosotros h1{
+    margin-top: 5rem;
+    margin-left: 5%;
+ }
+ .container-nosotros h2{
+    margin-top: 25rem;
+    margin-left: 5%;
+ }
+ 
+ .elproyecto{
+    display: flex;
+    flex-direction: column;
+ }
+ .elproyecto h2, h3{
+    margin-left: 5%;
+ }
+ .elproyecto img{
+    width: 90%;
+    height: 40rem;
+    margin-left: 5%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+ }
+ .elproyecto p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 5%;
+    text-align: justify;
+    line-height: 1.5rem;
+ }
+ 
+ .collage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+ }
+ 
+ .sillas {
+    display: flex;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    
+ }
+ .sillas img{
+    width: 80%;
+    height: auto;
+    margin-left: 15%;
+ 
+ }
+ .bolsas img{
+    width: 80%;
+ }
+ .maquina img{
+    width: 80%;
+ }

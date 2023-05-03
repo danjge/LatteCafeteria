@@ -1,0 +1,128 @@
+/*PAGINA NOVEDADES*/
+.contenedor-general{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    
+ }
+ 
+ .container-novedades{
+    display: flex;
+    background-image: url("../img/backgroundnovedades.jpg");
+    background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
+    background-blend-mode: multiply; /* Para mezclar la imagen con el color de fondo */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    grid-column: span 2;
+ }
+ 
+ .container-novedades h1{
+    display: flex;
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+ }
+ .noticia1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 50%;
+    font-size: 2rem;
+    gap: 2rem;
+ }
+ .noticia1 h2{
+    display: flex;
+    color: var(--main-color);
+    grid-column: 1 / 1;
+ }
+ .noticia1 p{
+    display: flex;
+    grid-column: 1 / 1;
+    text-align: justify;
+ }
+ 
+ .noticia2{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 50%;
+    font-size: 2rem;
+    gap: 2rem;
+ }
+ .noticia2 h2{
+    display: flex;
+    color: var(--main-color);
+    grid-column: 2 / 2;
+ }
+ .noticia2 p{
+    display: flex;
+    grid-column: 2 / 2;
+    text-align: justify;
+   
+ }
+ .noticia3{
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 50%;
+    font-size: 2rem;
+    gap: 2rem;
+ }
+ .noticia3 h2{
+    display: flex;
+    color: var(--main-color);
+    grid-column: 1 / 1;
+ }
+ .noticia3 p{
+    display: flex;
+    grid-column: 1 / 1;
+    text-align: justify;
+ }
+ 
+ .imagen-right{
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 2;
+    justify-self: start;
+ }
+ .imagen-right2{
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 2;
+    justify-self: start;
+ }
+ .imagen-left{
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 1;
+    justify-self: end;
+ }
+ .imagen-right img{
+    grid-column: 2 / 2;
+    border-radius: 20%;
+    width: 480px;
+    height: 480px;
+ }
+ .imagen-right2 img{
+    grid-column: 2 / 2;
+    border-radius: 20%;
+    width: 480px;
+    height: 480px;
+ }
+ .imagen-left img{
+    grid-column: 2 / 2;
+    grid-auto-flow: dense;
+    border-radius: 20%;
+    width: 480px;
+    height: 480px;
+ }

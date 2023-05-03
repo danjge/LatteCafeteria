@@ -1,0 +1,22 @@
+.menu-hamborgueja {
+    position: relative;
+  }
+  .collapse {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 100%;
+  }
+ .navbar-toggler {
+    z-index: 999999;
+ }
+ .container.fluid{
+    grid-column: 1 / 1;
+    grid-row: inherit;
+ }
+ .navbar-toggler{
+    width: 60px;
+ }
+ .navbar-toggler-icon{
+    width: 100%;
+ }

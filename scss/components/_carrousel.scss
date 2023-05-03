@@ -1,0 +1,19 @@
+.carousel-item.active{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+ }
+ .carousel-item{
+    justify-content: center;
+    align-items: center;
+ }
+ .carousel-item img{
+    border-radius: 20%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+ }
+ .navbar-toggler-icon {
+    border-color: var(--main-color); /* Color del borde */
+    border: var(--main-color);
+  }
