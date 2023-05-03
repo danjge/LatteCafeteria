@@ -1,0 +1,21 @@
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border:.1rem solid rgba(255, 255, 255, 0.986);
+ }
+ 
+ * {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    color: #f4f4f4;
+ }
+ body {
+    background: linear-gradient(to bottom, #000000, #808080);
+  }
+ 
