@@ -1,158 +1,154 @@
 /*FOOTER*/
 .footer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    padding: 50px 0;
-    width: 100%;
-    height: auto;
-    margin-top: 5rem;
- }
- .container-arriba{
-    grid-column: span 2;
-    display: flex;
-    max-width: 100vh;
-    margin: 0 auto;
- }
- .footer-row{
-    display: flex;
-    justify-content: space-around;
- }
- .footer-row footer-list{
-    margin-left: 25%;
- }
- .footer-list{
-    width: 100%;
- }
- .footer-list h4{
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-weight: 500;
-    padding-bottom: 5px;
-    display: inline-block;
- }
- .footer-list ul li{
-    font-size: 18px;
-    text-decoration: none;
-    list-style: none;
-    color: #BBBBBB;
-    margin-bottom: 15px;
-    transition: all .3s ease;
- }
- .footer-list ul li:hover{
-    color: #FFFFFF;
-    padding-left: 6px;
- }
- .footer-list ul li a{
-    font-size: 18px;
-    color: #BBBBBB;
- }
- .footer-p{
-    display: flex;
-    flex-direction: column;
- }
- .footer-p h4{
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-weight: 500;
-    padding-bottom: 5px;
-    display: inline-block;
- }
- .footer-p p{
-    text-align: justify;
-    text-transform:initial;
-    letter-spacing: 1px;
-    word-spacing: 0.5px;
- }
- .footer-p form{
-    display: inline-flex;
- }
- .footer-p form input{
-    color: var(--main-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0.5rem;
- }
- .footer-p button{
-    background-color: var(--main-color);
-    color: #f4f4f4;
-    width: 50%;
-    height: 3rem;
-    padding: 1rem 1rem;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 5px;
- }
- .social a{
-    display: inline-block;
-    justify-content: space-between;
-    min-height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #FFFFFF
- }
- .social a:hover{
-    background-color: var(--main-color);
- }
- 
-  /*ULTIMA SECCION DEL FOOTER*/
- .container-abajo{
-    display: grid;
-    grid-column: span 2;
-    width: 100%;
-    height: auto;
-    background-color: #e2e2e2;  
-    padding:5rem;
- }
- .container-abajo h6{
-    display: flex;
-    color: #000000;
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- }
- .copy{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;/*asdasdasdadsadsaddasdsad*/
- }
- .copy ul{
-    display: flex;
-    width: 50rem;
-    height: 10px;
-    list-style: none;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: all .3s ease;
-    text-transform: initial;
-    
- }
- .copy ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #000000;
-    padding: 0 1rem;
-    border-right: var(--black) solid;
-    transition: all .3s ease;
- }
- .copy ul li:last-child{
-    border-right: none;
- }
- .copy ul li:hover{
-    color: var(--main-color);
- }
- 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, auto);
+   padding: 50px 0;
+   width: 100%;
+   height: auto;
+   margin-top: 5rem;
+   .container-arriba{
+      grid-column: span 2;
+      display: flex;
+      max-width: 100vh;
+      margin: 0 auto;
+   }
+   .footer-row{
+      display: flex;
+      justify-content: space-around;
+   }
+   .footer-list{
+      width: 100%;
+      h4{
+         font-size: 20px;
+         color: #FFFFFF;
+         margin-bottom: 20px;
+         font-weight: 500;
+         padding-bottom: 5px;
+         display: inline-block;
+      } 
+      ul li{
+         font-size: 18px;
+         text-decoration: none;
+         list-style: none;
+         color: #BBBBBB;
+         margin-bottom: 15px;
+         transition: all .3s ease;
+      } 
+      ul li a{
+         font-size: 18px;
+         color: #BBBBBB;
+      } 
+   }
+   .footer-list ul li:hover{
+      color: #FFFFFF;
+      padding-left: 6px;
+   }
+   .footer-p{
+      display: flex;
+      flex-direction: column;
+      h4{
+         font-size: 20px;
+         color: #FFFFFF;
+         margin-bottom: 20px;
+         font-weight: 500;
+         padding-bottom: 5px;
+         display: inline-block;
+      }
+      p{
+         text-align: justify;
+         text-transform:initial;
+         letter-spacing: 1px;
+         word-spacing: 0.5px;
+      }
+      form{
+         display: inline-flex;
+      }
+      input{
+         color: var(--main-color);
+         margin-top: 20px;
+         margin-bottom: 20px;
+         margin-right: 0.5rem;
+      }
+      button{
+         background-color: var(--main-color);
+         color: #f4f4f4;
+         width: 50%;
+         height: 3rem;
+         padding: 1rem 1rem;
+         border-radius: 20px;
+         text-align: center;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         margin-left: 5px;
+      }
+   }
+   .social{ 
+      a{
+         display: inline-block;
+         justify-content: space-between;
+         min-height: 40px;
+         width: 40px;
+         margin: 0 10px 10px 0;
+         text-align: center;
+         line-height: 40px;
+         border-radius: 50%;
+         color: #FFFFFF  
+      }
+   } 
+   .social a:hover{
+      background-color: var(--main-color);
+   }
+   .container-abajo{
+      display: grid;
+      grid-column: span 2;
+      width: 100%;
+      height: auto;
+      background-color: #e2e2e2;  
+      padding:5rem;
+      h6{
+         display: flex;
+         color: #000000;
+         font-size: 1rem;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+   }    
+   .copy{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%; 
+      ul{
+         display: flex;
+         width: 50rem;
+         height: 10px;
+         list-style: none;
+         text-decoration: none;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         transition: all .3s ease;
+         text-transform: initial;  
+      }
+      ul li{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         color: #000000;
+         padding: 0 1rem;
+         border-right: var(--black) solid;
+         transition: all .3s ease;
+      }
+   }
+   .copy ul li:last-child{
+      border-right: none;
+   }
+   .copy ul li:hover{
+      color: var(--main-color);
+   }
+}
+
