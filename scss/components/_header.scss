@@ -102,6 +102,22 @@ header {
     }
  }
 
+ @media (max-width: 600px) {
+    /*header*/
+    .navbar-desk {
+      display: none;
+    }
+    .search{
+       display: none;
+    }
+    .search input{
+        display: none;
+     }
+
+    .menu-right ul{
+       display: none;
+    }
+  }
  
 
  

@@ -7,15 +7,11 @@
    width: 100%;
    height: auto;
    margin-top: 5rem;
-   .container-arriba{
-      grid-column: span 2;
-      display: flex;
-      max-width: 100vh;
-      margin: 0 auto;
-   }
-   .footer-row{
-      display: flex;
-      justify-content: space-around;
+   .footer-listas{
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      display: inline-flex;
+      margin-left: 10rem;
    }
    .footer-list{
       width: 100%;
@@ -27,6 +23,9 @@
          padding-bottom: 5px;
          display: inline-block;
       } 
+      ul{
+         padding-left: 0;
+      }
       ul li{
          font-size: 18px;
          text-decoration: none;
@@ -45,7 +44,9 @@
       padding-left: 6px;
    }
    .footer-p{
-      display: flex;
+      display: grid;
+      grid-column: 2 / 2;
+      grid-row:  1 / 1;
       flex-direction: column;
       h4{
          font-size: 20px;
@@ -60,6 +61,7 @@
          text-transform:initial;
          letter-spacing: 1px;
          word-spacing: 0.5px;
+         margin-right: 20rem;
       }
       form{
          display: inline-flex;
@@ -69,6 +71,8 @@
          margin-top: 20px;
          margin-bottom: 20px;
          margin-right: 0.5rem;
+         border-radius: 20px;
+         text-align: center;
       }
       button{
          background-color: var(--main-color);
@@ -131,7 +135,8 @@
          justify-content: center;
          text-align: center;
          transition: all .3s ease;
-         text-transform: initial;  
+         text-transform: initial;
+         padding-left: 0;
       }
       ul li{
          display: flex;
