@@ -54,8 +54,6 @@ a {
 /*HEADER*/
 header {
   display: grid;
-  width: 100%;
-  height: 100%;
   align-items: center;
   text-align: center;
   padding: 1rem;
@@ -71,7 +69,7 @@ header {
   text-align: center;
   align-items: center;
   font-size: 1rem;
-  width: 100%;
+  max-width: 100%;
 }
 .header-container .logo {
   grid-column: 2/2;
@@ -82,7 +80,7 @@ header {
 .header-container .logo img {
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: 5rem;
   height: auto;
 }
 .header-container .navbar-desk {
@@ -128,6 +126,8 @@ header {
   display: inline-flex;
   grid-column: 3/3;
   align-items: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 .header-container .iconos a {
   padding-left: 30px;
@@ -153,7 +153,7 @@ header {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   /*header*/
   .navbar-desk {
     display: none;
@@ -272,7 +272,6 @@ header {
   background-color: var(--main-color);
 }
 .footer .container-abajo {
-  display: grid;
   grid-column: span 2;
   width: 100%;
   height: 5rem;
@@ -287,14 +286,14 @@ header {
   align-items: center;
   text-align: center;
 }
-.footer .copy {
+.footer .container-abajo .copy {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
 }
-.footer .copy ul {
+.footer .container-abajo .copy ul {
   display: flex;
   width: 50rem;
   height: 10px;
@@ -307,7 +306,7 @@ header {
   text-transform: initial;
   padding-left: 0;
 }
-.footer .copy ul li {
+.footer .container-abajo .copy li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,7 +323,7 @@ header {
   color: var(--main-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -339,39 +338,42 @@ header {
     flex-direction: column;
     display: flex;
     margin-top: 5rem;
-    margin-left: 0 !important;
+    justify-content: center;
     text-align: none;
+    margin-left: 20% !important;
     letter-spacing: 0;
   }
   .footer-p h4 {
     font-size: 5rem;
   }
   .container-abajo {
-    grid-template-rows: repeat(2, 1fr);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
   }
   .container-abajo .copy {
-    grid-row: 2/2;
+    display: inline-flex;
     margin-top: 1rem;
-    max-width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .container-abajo .copy h6 {
+    display: none;
   }
   .container-abajo .copy ul {
     justify-content: center;
     text-align: center;
     align-items: center;
-    max-width: 100%;
     flex-direction: column;
+    object-fit: contain;
   }
-  .container-abajo .copy ul li {
-    border-right: none;
+  .container-abajo .copy li {
     font-size: 1rem;
-    max-width: 100%;
+    object-fit: contain;
+    border-right: none;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
   .menuhamburguesa {
     display: none;
   }
