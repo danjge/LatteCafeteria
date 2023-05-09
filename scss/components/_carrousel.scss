@@ -13,11 +13,16 @@
          display: flex;
          justify-content: center;
       }
+      @media screen and (max-width: 567px){
+         .card:not(:first-child){
+            display: none;
+         }
+      }
       .img-wrapper{
+         display: flex;
+         justify-content: center;
          img{
             border-radius: 20%;
-            justify-content: center;
-            margin-left: 25%;
             width: 200px;
             margin-top: 2rem; 
             max-width: 100%;
