@@ -3,73 +3,87 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(3, auto);
-   width: 100%;
+   width: 100%; 
    .corazonderoca{
-      width: 100%;
-      margin-top: 5rem;
       grid-column: 1 / span 2;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
       margin-bottom: 5rem;
       h1{
-         justify-content: center;
          text-align: center;
          margin-bottom: 3rem;
-      }
+      } 
       img{
-         width: 80%;
-         margin-left: 10%;
+         width: 60%;
          border-radius: 5%;
+         margin-left: 20%;
       }
-   }
+   } 
    .ubicacion{
+      grid-column: span 2;
       display: grid;
+      grid-row-gap: 5rem;
+      grid-column-gap: 5rem;
+      place-content: center;
       .fachada{
+         grid-column: 1;
+         grid-row: 2 / span 1;
          display: flex;
          flex-direction: column;
-         grid-column: 1 / 1;
-         grid-row: 1 / 1;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
          width: 100%;
-         justify-self: center;
-         justify-items: center; 
-         width: 40rem;
+         max-width: 40rem;
          img{
-            display: flex;
-            height: 40rem;
-            justify-content: center;
-            
+            width: 50rem;
+            height: 50rem;
+            max-width: 100%;
+            max-height: auto;
             border-radius: 10%;
-         }
-         h3{
-         margin-left: 30%;
          }
       }
       .latte-maps{
+         grid-column: 2;
+         grid-row: 2 / span 1;
          display: flex;
          flex-direction: column;
-         justify-items: center;
-         grid-column: 2 / 2;
-         grid-row: 1 / 1;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: 100%;
+         max-width: 100%;
          iframe{
-            display: flex;
-            margin-left: 10%;
-            width: 40rem;
-            height: 40rem;
+            width: 50rem;
+            height: 50rem;
             border-radius: 10%;
-         }
-         h3{
-            margin-left: 10%;
+            max-width: 100%;
+            max-height: 100%;
          }
       }
-   }
+   } 
    .direccion-roca{
-      display: grid;
       grid-column: 1 / span 2;
-      grid-row: 3 / 3;
-      margin-top: 5rem; 
+      grid-row: 3 / span 1;
       display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
       h3{
-         justify-content: center;
-         text-align: center;
          color: var(--main-color);
       }
-   }   
-}
+   }
+ }
+
+@media (max-width: 1024px) {
+   .fachada img {
+     max-width: 100%;
+     height: auto;
+   }
+   
+   .latte-maps iframe {
+     max-width: 100%;
+   }
+ }

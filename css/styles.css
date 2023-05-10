@@ -805,25 +805,35 @@ header {
 .elproyecto {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.elproyecto h2, .elproyecto h3 {
-  margin-left: 5%;
-}
-.elproyecto img {
-  width: 90%;
-  height: 40rem;
-  margin-left: 5%;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.elproyecto p {
+.elproyecto .sketch-local {
   display: flex;
-  flex-direction: column;
+  gap: 3rem;
   justify-content: center;
+  align-items: center;
   width: 80%;
   margin-left: 5%;
-  text-align: justify;
+}
+.elproyecto .sketch-local img {
+  justify-self: center;
+  height: 25rem;
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+.elproyecto h2 {
+  margin-left: 5%;
+  color: var(--main-color);
+}
+.elproyecto h3 {
+  margin-left: 5%;
+}
+.elproyecto p {
+  justify-content: center;
   line-height: 1.5rem;
+  align-items: center;
+  width: 80%;
+  margin-left: 5%;
 }
 
 .collage {
@@ -855,6 +865,13 @@ header {
   width: 80%;
 }
 
+@media (max-width: 1024px) {
+  .elproyecto .sketch-local {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+  }
+}
 /*PAGINA ENCONTRANOS*/
 .container-encontranos {
   display: grid;
@@ -863,73 +880,86 @@ header {
   width: 100%;
 }
 .container-encontranos .corazonderoca {
-  width: 100%;
-  margin-top: 5rem;
   grid-column: 1/span 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
   margin-bottom: 5rem;
 }
 .container-encontranos .corazonderoca h1 {
-  justify-content: center;
   text-align: center;
   margin-bottom: 3rem;
 }
 .container-encontranos .corazonderoca img {
-  width: 80%;
-  margin-left: 10%;
+  width: 60%;
   border-radius: 5%;
+  margin-left: 20%;
 }
 .container-encontranos .ubicacion {
+  grid-column: span 2;
   display: grid;
+  grid-row-gap: 5rem;
+  grid-column-gap: 5rem;
+  place-content: center;
 }
 .container-encontranos .ubicacion .fachada {
+  grid-column: 1;
+  grid-row: 2/span 1;
   display: flex;
   flex-direction: column;
-  grid-column: 1/1;
-  grid-row: 1/1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  justify-self: center;
-  justify-items: center;
-  width: 40rem;
+  max-width: 40rem;
 }
 .container-encontranos .ubicacion .fachada img {
-  display: flex;
-  height: 40rem;
-  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  max-width: 100%;
+  max-height: auto;
   border-radius: 10%;
-}
-.container-encontranos .ubicacion .fachada h3 {
-  margin-left: 30%;
 }
 .container-encontranos .ubicacion .latte-maps {
+  grid-column: 2;
+  grid-row: 2/span 1;
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  grid-column: 2/2;
-  grid-row: 1/1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
 }
 .container-encontranos .ubicacion .latte-maps iframe {
-  display: flex;
-  margin-left: 10%;
-  width: 40rem;
-  height: 40rem;
+  width: 50rem;
+  height: 50rem;
   border-radius: 10%;
-}
-.container-encontranos .ubicacion .latte-maps h3 {
-  margin-left: 10%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .container-encontranos .direccion-roca {
-  display: grid;
   grid-column: 1/span 2;
-  grid-row: 3/3;
-  margin-top: 5rem;
+  grid-row: 3/span 1;
   display: flex;
-}
-.container-encontranos .direccion-roca h3 {
   justify-content: center;
   text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.container-encontranos .direccion-roca h3 {
   color: var(--main-color);
 }
 
+@media (max-width: 1024px) {
+  .fachada img {
+    max-width: 100%;
+    height: auto;
+  }
+  .latte-maps iframe {
+    max-width: 100%;
+  }
+}
 /*PAGINA CONTACTO*/
 .contact-form {
   max-width: 600px;
