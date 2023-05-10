@@ -325,52 +325,50 @@ header {
 
 @media (max-width: 1024px) {
   .footer {
-    display: flex;
-    flex-direction: column;
+    display: block;
     max-width: 100%;
     max-height: 100%;
     margin: 0;
+    margin-top: 5rem;
   }
-  .footer-list {
+  .footer .footer-list {
     display: none;
   }
-  .footer-p {
-    flex-direction: column;
+  .footer .footer-p {
     display: flex;
-    margin-top: 5rem;
     justify-content: center;
-    text-align: none;
-    margin-left: 20% !important;
-    letter-spacing: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .footer-p h4 {
-    font-size: 5rem;
+  .footer .footer-p h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .footer .footer-p p {
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .container-abajo {
     display: inline-flex;
     justify-content: center;
     align-items: center;
   }
-  .container-abajo .copy {
-    display: inline-flex;
-    margin-top: 1rem;
-    flex-wrap: nowrap;
-    align-items: center;
+  .container-abajo h6 {
+    visibility: hidden;
   }
-  .container-abajo .copy h6 {
-    display: none;
+  .container-abajo .copy {
+    margin-top: 1rem;
+    align-items: center;
   }
   .container-abajo .copy ul {
-    justify-content: center;
-    text-align: center;
     align-items: center;
     flex-direction: column;
-    object-fit: contain;
   }
-  .container-abajo .copy li {
+  .container-abajo .copy ul li {
     font-size: 1rem;
-    object-fit: contain;
-    border-right: none;
+    border-right: none !important;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -598,7 +596,7 @@ header {
   justify-content: center;
   justify-self: center;
   width: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   gap: 2rem;
 }
 .contenedor-general .noticia1 h2 {
@@ -609,7 +607,6 @@ header {
 .contenedor-general .noticia1 p {
   display: flex;
   grid-column: 1/1;
-  text-align: justify;
 }
 .contenedor-general .noticia2 {
   grid-column: 2/2;
@@ -619,7 +616,7 @@ header {
   justify-content: center;
   justify-self: center;
   width: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   gap: 2rem;
 }
 .contenedor-general .noticia2 h2 {
@@ -630,7 +627,6 @@ header {
 .contenedor-general .noticia2 p {
   display: flex;
   grid-column: 2/2;
-  text-align: justify;
 }
 .contenedor-general .noticia3 {
   grid-column: 1/1;
@@ -638,7 +634,7 @@ header {
   flex-direction: column;
   justify-self: center;
   width: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   gap: 2rem;
 }
 .contenedor-general .noticia3 h2 {
@@ -649,7 +645,6 @@ header {
 .contenedor-general .noticia3 p {
   display: flex;
   grid-column: 1/1;
-  text-align: justify;
 }
 .contenedor-general .imagen-right {
   display: flex;
@@ -689,6 +684,87 @@ header {
   height: 480px;
 }
 
+@media (max-width: 1024px) {
+  .container-novedades {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+  }
+  .contenedor-general {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #titulo-fondo {
+    display: flex;
+    font-size: 1rem;
+  }
+  .noticia1 {
+    display: flex;
+    margin-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1rem;
+    gap: 0;
+  }
+  .noticia1 p {
+    display: flex;
+    margin-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .noticia2 {
+    display: flex;
+    margin-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    font-size: 1rem;
+    gap: 0;
+  }
+  .noticia2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .noticia3 {
+    display: flex;
+    margin-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1rem;
+    gap: 0;
+  }
+  .noticia3 p {
+    display: flex;
+    margin-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .imagen-right img {
+    max-width: 100%;
+    width: auto;
+  }
+  .imagen-right2 img {
+    max-width: 100%;
+    width: auto;
+  }
+  .imagen-left img {
+    max-width: 100%;
+    width: auto;
+  }
+}
 /*PAGINA PRODUCTOS*/
 .container-productos {
   background-image: url("../img/mainproductos1.jpg");
@@ -784,6 +860,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
+  width: 100%;
 }
 .container-encontranos .corazonderoca {
   width: 100%;
@@ -801,43 +878,51 @@ header {
   margin-left: 10%;
   border-radius: 5%;
 }
-.container-encontranos .fachada {
+.container-encontranos .ubicacion {
+  display: grid;
+}
+.container-encontranos .ubicacion .fachada {
   display: flex;
   flex-direction: column;
   grid-column: 1/1;
+  grid-row: 1/1;
   width: 100%;
   justify-self: center;
   justify-items: center;
   width: 40rem;
 }
-.container-encontranos .fachada img {
+.container-encontranos .ubicacion .fachada img {
+  display: flex;
   height: 40rem;
-  justify-self: center;
-  margin-left: 30%;
+  justify-content: center;
   border-radius: 10%;
 }
-.container-encontranos .fachada h3 {
+.container-encontranos .ubicacion .fachada h3 {
   margin-left: 30%;
 }
-.container-encontranos .latte-maps {
+.container-encontranos .ubicacion .latte-maps {
   display: flex;
   flex-direction: column;
   justify-items: center;
   grid-column: 2/2;
+  grid-row: 1/1;
 }
-.container-encontranos .latte-maps iframe {
+.container-encontranos .ubicacion .latte-maps iframe {
   display: flex;
   margin-left: 10%;
   width: 40rem;
   height: 40rem;
   border-radius: 10%;
 }
-.container-encontranos .latte-maps h3 {
+.container-encontranos .ubicacion .latte-maps h3 {
   margin-left: 10%;
 }
 .container-encontranos .direccion-roca {
+  display: grid;
   grid-column: 1/span 2;
+  grid-row: 3/3;
   margin-top: 5rem;
+  display: flex;
 }
 .container-encontranos .direccion-roca h3 {
   justify-content: center;

@@ -29,7 +29,7 @@
       justify-content: center;
       justify-self: center;
       width: 50%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       gap: 2rem; 
          h2{
             display: flex;
@@ -39,7 +39,6 @@
          p{
             display: flex;
             grid-column: 1 / 1;
-            text-align: justify;
          }
    }
    .noticia2{
@@ -50,7 +49,7 @@
       justify-content: center;
       justify-self: center;
       width: 50%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       gap: 2rem;
       h2{
          display: flex;
@@ -60,7 +59,6 @@
       p{
          display: flex;
          grid-column: 2 / 2;
-         text-align: justify;
       }
    }
    .noticia3{
@@ -69,7 +67,7 @@
       flex-direction: column;
       justify-self: center;
       width: 50%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       gap: 2rem;
       h2{
          display: flex;
@@ -79,7 +77,6 @@
       p{
          display: flex;
          grid-column: 1 / 1;
-         text-align: justify;
       }
    } 
    .imagen-right{
@@ -120,7 +117,87 @@
       }
    }
 }
-   
+@media (max-width: 1024px) {
+   .container-novedades{
+   display: flex;
+   width: 100%;
+   height:20rem;
+}   
+.contenedor-general{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+#titulo-fondo{
+   display: flex;
+   font-size: 1rem;
+}
+.noticia1{
+   display: flex;
+   margin-left: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-left: 0;
+   font-size: 1rem;
+   gap: 0;
+}
+.noticia1 p{
+   display: flex;
+   margin-left: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.noticia2{
+   display: flex;
+   margin-left: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-right: 0;
+   font-size: 1rem;
+   gap: 0;
+}   
+.noticia2 p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.noticia3{
+   display: flex;
+   margin-left: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-left: 0;
+   font-size: 1rem;
+   gap: 0;
+}
+.noticia3 p{
+   display: flex;
+   margin-left: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.imagen-right img{
+   max-width: 100%;
+   width: auto;
+}
+.imagen-right2 img{
+   max-width: 100%;
+   width: auto;
+}
+.imagen-left img{
+   max-width: 100%;
+   width: auto;
+}
+}
    
    
    
