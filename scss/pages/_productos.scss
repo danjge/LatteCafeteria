@@ -10,10 +10,78 @@
     flex-direction: column;
     object-fit: cover;
  }
+.titulos{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3rem;
+}
+.cafe{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5% 5rem 5%;
+    .card{
+        padding: 3rem;
+        width: 75%;
+        height: auto;        
+        img{
+            width: 300px;
+            justify-content: center;
+            border-radius: 15% !important;
+        }
+        .card-body{
+            justify-content: center;
+            p{
+                margin-right: 5%;
+           
+            }
+            a{
+                justify-self: center;
+            }
+            button{
+                width: auto;
+                height: 3rem;
+                h5{
+                    align-items: center;
+                }
+            }
+        }    
+    }
+}
+.bebidas-frias{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5% 5rem 5%;
+        .card{
+            padding: 3rem;
+            width: 75%;
+            height: auto;        
+            img{
+                width: 300px;
+                justify-content: center;
+                border-radius: 15% !important;
+            }
+            .card-body{
+                justify-content: center;
+                p{
+                    margin-right: 5%;
+                }
+                a{
+                    justify-self: center;
+                }
+                button{
+                    width: auto;
+                    height: 3rem;
+                    h5{
+                        align-items: center;
+                    }
+                }
+            }    
+        }
+    }
 
- @media (max-width: 1024px) {
-    main{
-        margin-right: 16px;
-        margin-left: 16px;
+ @media (max-width: 768px) {
+    .cafe, .bebidas-frias{
+        justify-content: center;
+        align-items: center;
     }
  }
