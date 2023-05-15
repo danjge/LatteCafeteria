@@ -1,18 +1,25 @@
 
- @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .menuhamburguesa{
     display: none;
   }
- }
-.offcanvas-title{
-  color: var(--main-color) !important;
 }
-.btn-close{
+.menuhamburguesa .offcanvas-title{
+  color: var(--main-color);
+}
+.menuhamburguesa .btn-close{
   filter: invert(100%);
 }
-.navbar-nav{
-  text-align: justify !important;
+.menuhamburguesa .navbar-nav{
+  text-align: justify;
 }
-.btn{
-  background-color: inherit !important;
+.menuhamburguesa .btn{
+  background-color: inherit;
+}
+.menuhamburguesa .fa-bars{
+    color: #a67d0c;
+}
+
+.menuhamburguesa .fa-mug-hot{
+  color: #a67d0c;
 }

@@ -256,6 +256,9 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 .footer .social a {
   display: inline-block;
@@ -376,20 +379,28 @@ header {
     display: none;
   }
 }
-.offcanvas-title {
-  color: var(--main-color) !important;
+.menuhamburguesa .offcanvas-title {
+  color: var(--main-color);
 }
 
-.btn-close {
+.menuhamburguesa .btn-close {
   filter: invert(100%);
 }
 
-.navbar-nav {
-  text-align: justify !important;
+.menuhamburguesa .navbar-nav {
+  text-align: justify;
 }
 
-.btn {
-  background-color: inherit !important;
+.menuhamburguesa .btn {
+  background-color: inherit;
+}
+
+.menuhamburguesa .fa-bars {
+  color: #a67d0c;
+}
+
+.menuhamburguesa .fa-mug-hot {
+  color: #a67d0c;
 }
 
 .carousel-inner {
@@ -454,6 +465,77 @@ header {
   animation-duration: 1s; /* Cambia el tiempo de la animación a 1 segundo */
 }
 
+.cafe {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 5% 5rem 5%;
+}
+.cafe .card {
+  padding: 3rem;
+  width: 75%;
+  height: auto;
+}
+.cafe .card img {
+  width: 300px;
+  justify-content: center;
+  border-radius: 15% !important;
+}
+.cafe .card .card-body {
+  justify-content: center;
+}
+.cafe .card .card-body p {
+  margin-right: 5%;
+}
+.cafe .card .card-body button {
+  width: auto;
+  height: 3rem;
+}
+.cafe .card .card-body button h5 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.bebidas-frias {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 5% 5rem 5%;
+}
+.bebidas-frias .card {
+  padding: 3rem;
+  width: 75%;
+  height: auto;
+}
+.bebidas-frias .card img {
+  width: 300px;
+  justify-content: center;
+  border-radius: 15% !important;
+}
+.bebidas-frias .card .card-body {
+  justify-content: center;
+}
+.bebidas-frias .card .card-body p {
+  margin-right: 5%;
+}
+.bebidas-frias .card .card-body .fa-heart {
+  color: #d3ad7f;
+}
+.bebidas-frias .card .card-body button {
+  width: auto;
+  height: 3rem;
+}
+.bebidas-frias .card .card-body button h5 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cafe, .bebidas-frias {
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*INDEX*/
 .container-principal {
   display: grid;
@@ -531,6 +613,7 @@ header {
 .container-principal .seccion-c {
   grid-column: 1/span 2;
   display: flex;
+  margin-bottom: 5rem;
 }
 .container-principal .seccion-c img {
   border-radius: 20%;
@@ -541,8 +624,8 @@ header {
   justify-content: center;
 }
 .container-principal .img-1 img {
-  width: 35rem;
-  height: 35rem;
+  width: 350px;
+  height: 350px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -552,13 +635,13 @@ header {
   width: 100%;
 }
 .container-principal .img-2 img {
-  width: 35rem;
-  height: 35rem;
+  width: 350px;
+  height: 350px;
   max-width: 100%;
   max-height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contenedor-principal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -792,76 +875,6 @@ header {
   margin-bottom: 3rem;
 }
 
-.cafe {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 5% 5rem 5%;
-}
-.cafe .card {
-  padding: 3rem;
-  width: 75%;
-  height: auto;
-}
-.cafe .card img {
-  width: 300px;
-  justify-content: center;
-  border-radius: 15% !important;
-}
-.cafe .card .card-body {
-  justify-content: center;
-}
-.cafe .card .card-body p {
-  margin-right: 5%;
-}
-.cafe .card .card-body a {
-  justify-self: center;
-}
-.cafe .card .card-body button {
-  width: auto;
-  height: 3rem;
-}
-.cafe .card .card-body button h5 {
-  align-items: center;
-}
-
-.bebidas-frias {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 5% 5rem 5%;
-}
-.bebidas-frias .card {
-  padding: 3rem;
-  width: 75%;
-  height: auto;
-}
-.bebidas-frias .card img {
-  width: 300px;
-  justify-content: center;
-  border-radius: 15% !important;
-}
-.bebidas-frias .card .card-body {
-  justify-content: center;
-}
-.bebidas-frias .card .card-body p {
-  margin-right: 5%;
-}
-.bebidas-frias .card .card-body a {
-  justify-self: center;
-}
-.bebidas-frias .card .card-body button {
-  width: auto;
-  height: 3rem;
-}
-.bebidas-frias .card .card-body button h5 {
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .cafe, .bebidas-frias {
-    justify-content: center;
-    align-items: center;
-  }
-}
 /*PAGINA NOSOTROS*/
 .container-nosotros {
   display: flex;
@@ -1012,15 +1025,11 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
-  max-width: 100%;
 }
 .container-encontranos .ubicacion .latte-maps iframe {
   width: 50rem;
   height: 50rem;
   border-radius: 10%;
-  max-width: 100%;
-  max-height: 100%;
 }
 .container-encontranos .direccion-roca {
   grid-column: 1/span 2;

@@ -1,0 +1,71 @@
+.cafe{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5% 5rem 5%;
+    .card{
+        padding: 3rem;
+        width: 75%;
+        height: auto;        
+        img{
+            width: 300px;
+            justify-content: center;
+            border-radius: 15% !important;
+        }
+        .card-body{
+            justify-content: center;
+            p{
+                margin-right: 5%;
+           
+            }
+            button{
+                width: auto;
+                height: 3rem;
+                h5{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }    
+    }
+}
+.bebidas-frias{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5% 5rem 5%;
+        .card{
+            padding: 3rem;
+            width: 75%;
+            height: auto;        
+            img{
+                width: 300px;
+                justify-content: center;
+                border-radius: 15% !important;
+            }
+            .card-body{
+                justify-content: center;
+                p{
+                    margin-right: 5%;
+                }
+                .fa-heart{
+                    color: #d3ad7f
+                }
+                button{
+                    width: auto;
+                    height: 3rem;
+                    h5{
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+                    }
+                }
+            }    
+        }
+    }
+
+ @media (max-width: 768px) {
+    .cafe, .bebidas-frias{
+        justify-content: center;
+        align-items: center;
+    }
+ }
