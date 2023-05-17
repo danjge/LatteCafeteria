@@ -13,6 +13,7 @@
       h1{
          text-align: center;
          margin-bottom: 3rem;
+         font-size: 2em;
       } 
       img{
          width: 60%;
@@ -42,6 +43,7 @@
             max-width: 100%;
             max-height: auto;
             border-radius: 10%;
+            object-fit: contain;
          }
       }
       .latte-maps{
@@ -52,11 +54,12 @@
          justify-content: center;
          align-items: center;
          text-align: center;
+         object-fit: contain;
          iframe{
             width: 50rem;
             height: 50rem;
             border-radius: 10%;
-
+            object-fit: contain;
          }
       }
    } 
@@ -75,6 +78,11 @@
  }
 
 @media (max-width: 1024px) {
+   .ubicacion{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
    .fachada img {
      max-width: 100%;
      height: auto;

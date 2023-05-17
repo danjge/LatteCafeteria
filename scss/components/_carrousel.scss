@@ -50,10 +50,13 @@
    }
 
    .carousel-inner .carousel-item {
-      transition-duration: 1s; /* Cambia el tiempo de transición a 2 segundos */
+      transition-duration: 0.5s; 
    }
    .carousel-item {
-      animation-duration: 1s; /* Cambia el tiempo de la animación a 1 segundo */
+      animation-duration: 1s;
+   }
+   .fa-circle-down{
+      color: #d3ad7f
    }
 
 
