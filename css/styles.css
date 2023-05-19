@@ -472,11 +472,14 @@ header {
 .cafe {
   display: flex;
   flex-direction: column;
-  margin: 3rem 5% 5rem 5%;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .cafe .card {
   padding: 3rem;
-  width: 75%;
+  width: 60rem;
+  max-width: 100%;
   height: auto;
 }
 .cafe .card img {
@@ -503,12 +506,15 @@ header {
 .bebidas-frias {
   display: flex;
   flex-direction: column;
-  margin: 3rem 5% 5rem 5%;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .bebidas-frias .card {
   padding: 3rem;
-  width: 75%;
-  height: auto;
+  width: 60rem;
+  max-width: 100%;
 }
 .bebidas-frias .card img {
   width: 300px;
@@ -538,6 +544,7 @@ header {
   .cafe, .bebidas-frias {
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
 /*INDEX*/
@@ -850,14 +857,20 @@ header {
   .imagen-right img {
     max-width: 100%;
     width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .imagen-right2 img {
     max-width: 100%;
     width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .imagen-left img {
     max-width: 100%;
     width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 /*PAGINA PRODUCTOS*/
@@ -871,6 +884,9 @@ header {
   margin-bottom: 5rem;
   flex-direction: column;
   object-fit: cover;
+}
+.container-productos h1 {
+  padding-top: 3%;
 }
 
 .titulos {
@@ -972,6 +988,9 @@ header {
     height: auto;
     gap: 0;
   }
+  .elproyecto p {
+    text-align: center;
+  }
 }
 /*PAGINA ENCONTRANOS*/
 .container-encontranos {
@@ -986,22 +1005,29 @@ header {
   flex-direction: column;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 .container-encontranos .corazonderoca h1 {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2em;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .container-encontranos .corazonderoca img {
-  width: 60%;
+  width: 80rem;
+  height: auto;
+  max-width: 100%;
   border-radius: 5%;
-  margin-left: 20%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .container-encontranos .ubicacion {
   grid-column: span 2;
   display: grid;
   grid-row-gap: 5rem;
-  grid-column-gap: 5rem;
+  grid-column-gap: 2rem;
   place-content: center;
 }
 .container-encontranos .ubicacion .fachada {
@@ -1013,15 +1039,15 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 40rem;
 }
 .container-encontranos .ubicacion .fachada img {
   width: 50rem;
   height: 50rem;
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   border-radius: 10%;
-  object-fit: contain;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .container-encontranos .ubicacion .latte-maps {
   grid-column: 2;
@@ -1031,13 +1057,15 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  object-fit: contain;
 }
 .container-encontranos .ubicacion .latte-maps iframe {
+  max-width: 100%;
+  max-height: auto;
   width: 50rem;
   height: 50rem;
   border-radius: 10%;
-  object-fit: contain;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .container-encontranos .direccion-roca {
   grid-column: 1/span 2;
@@ -1047,23 +1075,30 @@ header {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .container-encontranos .direccion-roca h3 {
   color: var(--main-color);
 }
 
 @media (max-width: 1024px) {
-  .ubicacion {
+  .container-encontranos .ubicacion {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
   }
-  .fachada img {
+  .container-encontranos .ubicacion .fachada img {
     max-width: 100%;
     height: auto;
   }
-  .latte-maps iframe {
+  .container-encontranos .ubicacion .latte-maps iframe {
     max-width: 100%;
+    max-height: 100%;
   }
 }
 /*PAGINA CONTACTO*/

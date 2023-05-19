@@ -1,15 +1,18 @@
 .cafe{
     display: flex;
     flex-direction: column;
-    margin: 3rem 5% 5rem 5%;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
     .card{
         padding: 3rem;
-        width: 75%;
-        height: auto;        
+        width: 60rem;
+        max-width: 100%;
+        height: auto;
         img{
             width: 300px;
             justify-content: center;
-            border-radius: 15% !important;
+            border-radius: 15% !important;   
         }
         .card-body{
             justify-content: center;
@@ -32,11 +35,14 @@
 .bebidas-frias{
     display: flex;
     flex-direction: column;
-    margin: 3rem 5% 5rem 5%;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 16px;
+    margin-right: 16px;
         .card{
             padding: 3rem;
-            width: 75%;
-            height: auto;        
+            width: 60rem;
+            max-width: 100%;       
             img{
                 width: 300px;
                 justify-content: center;
@@ -67,5 +73,6 @@
     .cafe, .bebidas-frias{
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
  }

@@ -10,22 +10,29 @@
       flex-direction: column;
       margin-top: 5rem;
       margin-bottom: 5rem;
+      justify-content: center;
+      align-items: center;
       h1{
          text-align: center;
          margin-bottom: 3rem;
          font-size: 2em;
+         margin-left: 16px;
+         margin-right: 16px;
       } 
       img{
-         width: 60%;
+         width: 80rem;
+         height: auto;
+         max-width: 100%;
          border-radius: 5%;
-         margin-left: 20%;
+         padding-left: 16px;
+         padding-right: 16px;
       }
-   } 
+   }
    .ubicacion{
       grid-column: span 2;
       display: grid;
       grid-row-gap: 5rem;
-      grid-column-gap: 5rem;
+      grid-column-gap: 2rem;
       place-content: center;
       .fachada{
          grid-column: 1;
@@ -36,32 +43,35 @@
          align-items: center;
          text-align: center;
          width: 100%;
-         max-width: 40rem;
          img{
             width: 50rem;
             height: 50rem;
             max-width: 100%;
-            max-height: auto;
+            max-height: 100%;
             border-radius: 10%;
-            object-fit: contain;
+            padding-left: 16px;
+            padding-right: 16px;
+            
          }
       }
-      .latte-maps{
+      .latte-maps {
          grid-column: 2;
          grid-row: 2 / span 1;
          display: flex;
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         text-align: center;
-         object-fit: contain;
-         iframe{
-            width: 50rem;
-            height: 50rem;
-            border-radius: 10%;
-            object-fit: contain;
-         }
-      }
+         text-align: center;  
+       }
+      .latte-maps iframe {
+         max-width: 100%;
+         max-height: auto;
+         width: 50rem;
+         height: 50rem;
+         border-radius: 10%;
+         padding-left: 16px;
+         padding-right: 16px;
+       }
    } 
    .direccion-roca{
       grid-column: 1 / span 2;
@@ -71,6 +81,8 @@
       text-align: center;
       margin-top: 5rem;
       margin-bottom: 5rem;
+      padding-left: 16px;
+      padding-right: 16px;
       h3{
          color: var(--main-color);
       }
@@ -78,17 +90,21 @@
  }
 
 @media (max-width: 1024px) {
-   .ubicacion{
+   .container-encontranos .ubicacion{
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
+      justify-content: center;
+      align-items: center; 
+      margin-left: 16px; 
+      margin-right: 16px;
+      .fachada img {
+         max-width: 100%;
+         height: auto;
+      }
+      .latte-maps iframe {
+         max-width: 100%;
+         max-height: 100%;
+      }
    }
-   .fachada img {
-     max-width: 100%;
-     height: auto;
-   }
-   
-   .latte-maps iframe {
-     max-width: 100%;
-   }
- }
+}
